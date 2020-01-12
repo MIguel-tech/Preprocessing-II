@@ -1,1 +1,15 @@
 // Mixins in here
+
+.btn-class (@radius, @color) {
+  padding: 10px 40px;
+  border-radius: @radius;
+  background-color: teal;
+  color: @color;
+  cursor: pointer;
+  font-size: 2rem;
+  text-align: center;
+  
+    &:hover {
+      background-color: darken(teal, 5%)
+    }
+  }
